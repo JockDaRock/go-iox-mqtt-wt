@@ -18,9 +18,9 @@ type Request struct {
 }
 
 func main() {
-        cfg, err := ini.Load("/data/msg.ini")
+        cfg, err := ini.Load("/data/package_config.ini")
         if err != nil {
-                conf, err = ini.Load("msg.ini")
+                cfg, err = ini.Load("package_config.ini")
                 if err != nil {
                         fmt.Printf("Fail to read file: %v", err)
                         os.Exit(1)
